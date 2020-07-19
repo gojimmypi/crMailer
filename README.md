@@ -1,15 +1,17 @@
 # crMailer
 
-Command-line tool for PDF rendering of a Crystal Report file and send to recipient list.
+Command-line tool for PDF rendering of a Crystal Report file and sending to recipient list.
 
-Reports are typically created in a development environment. Over the course of timme, production server names also change.
-This library sets the datasource login for a given report (and all embedded subreports) to a new server at runtime. (database namees are asssume to remain the same)
+Reports are typically created in a development environment. Over the course of time, production server names also change.
+This library sets the datasource login (or more specifically the `TableLogOnInfo`) for a given report, and all embedded subreports, 
+to a new server at runtime. (database names are asssumed to remain the same) 
+
 Reports that span different servers or datasources will need to be adapted, 
 or have the `SetCrystalDocumentLogon` code disabled to not change datasources. 
 
 Uses [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15) `msdb.dbo.sp_send_dbmail` 
 to [send email](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-send-dbmail-transact-sql?view=sql-server-ver15), 
-but could be easily adapted to use any SMTP relay. This library is only used for the SQL call to the mailer.
+but could be easily adapted to use any SMTP relay. This `SQLHelper` library is only used for the call to the mailer.
 
 ## Requirements
 
