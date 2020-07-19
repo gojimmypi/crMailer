@@ -1,15 +1,15 @@
 # crMailer
 
-Cammand-line tool for PDF rendering of a Crystal Report file and send to recipient list.
+Command-line tool for PDF rendering of a Crystal Report file and send to recipient list.
 
-Reports are typically created in a development environment. Over the source of timme, production server names also change.
-This library sets the datasource login for a given report (and all embdeeded subreports) to a new database at runtime. 
-Reports that span differeent servers or datasources will meed to be adapted, 
+Reports are typically created in a development environment. Over the course of timme, production server names also change.
+This library sets the datasource login for a given report (and all embedded subreports) to a new server at runtime. (database namees are asssume to remain the same)
+Reports that span different servers or datasources will need to be adapted, 
 or have the `SetCrystalDocumentLogon` code disabled to not change datasources. 
 
-Uses [icrosoft SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15) `msdb.dbo.sp_send_dbmail` 
+Uses [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15) `msdb.dbo.sp_send_dbmail` 
 to [send email](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-send-dbmail-transact-sql?view=sql-server-ver15), 
-but could be easily adapted to use any SMTP relay.
+but could be easily adapted to use any SMTP relay. This library is only used for the SQL call to the mailer.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ using CrystalDecisions.ReportAppServer.CommLayer; // not used directly, but this
 
 The [PatternsAndPractices Microsoft.ApplicationBlocks.Data](https://github.com/gojimmypi/PatternsAndPractices/tree/master/Microsoft.ApplicationBlocks.Data) is used for SQL Access.
 See also the [Stack Exchange Dapper](https://github.com/StackExchange/Dapper) that works extremely well with [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) apps. 
-Undetermined if it will work here.  The Crystal Reports runtime does not currently work with DotNetCore
+Undetermined if it will work here.  The Crystal Reports runtime does not currently work with DotNetCore.
 
 This app was developed with the Crystal Reports Developer Edition installed locally, with the runtime installed at the server.
 
