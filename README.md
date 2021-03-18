@@ -42,6 +42,8 @@ mkdir -p bin64
 :: copy precompiled binaries such as CR runtime and Microsoft.ApplicationBlocks.Data into .\bin64
 ```
 
+Set the desired parameters in the [app.config](./app.config) file.
+
 Reminder: The file attach feature in `SendReport()` requires the SQL Server Service account to have file-level access for `OutputFileWithPath` at the local SQL server.
 ("C:" is the local drive at the server where `sp_send_dbmail1` runs, not necessarily where the code is running!)
 
