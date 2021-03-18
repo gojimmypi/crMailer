@@ -32,6 +32,16 @@ Undetermined if it will work here.  The Crystal Reports runtime does not current
 
 This app was developed with the Crystal Reports Developer Edition installed locally, with the runtime installed at the server.
 
+To use this code, assuming there's a `c:\workspace` directory:
+
+```
+c:
+cd\workspace\
+git clone https://github.com/gojimmypi/crMailer.git
+mkdir -p bin64
+:: copy precompiled binaries such as CR runtime and Microsoft.ApplicationBlocks.Data into .\bin64
+```
+
 Reminder: The file attach feature in `SendReport()` requires the SQL Server Service account to have file-level access for `OutputFileWithPath` at the local SQL server.
 ("C:" is the local drive at the server where `sp_send_dbmail1` runs, not necessarily where the code is running!)
 
