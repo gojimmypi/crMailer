@@ -4,3 +4,6 @@
 
 /.vs/crMailer/v15
 /obj/Debug
+/.vs/crMailer/v16
+/bin
+/obj/x64/Debug

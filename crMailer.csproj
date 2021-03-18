@@ -83,23 +83,20 @@
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin64\CR13\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <HintPath>..\bin64\CR13\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>..\..\bin64\CR13\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <HintPath>..\bin64\CR13\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin64\CR13\CrystalDecisions.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="CustomControls">
-      <HintPath>..\..\bin64\CustomControls.dll</HintPath>
+      <HintPath>..\bin64\CR13\CrystalDecisions.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=4.0.1.0, Culture=neutral, PublicKeyToken=87ba2141ae57fd17, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin64\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <HintPath>..\bin64\Microsoft.ApplicationBlocks.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
