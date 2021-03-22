@@ -47,6 +47,8 @@ Set the desired parameters in the [App.config](./App.config) file.
 Reminder: The file attach feature in `SendReport()` requires the SQL Server Service account to have file-level access for `OutputFileWithPath` at the local SQL server.
 ("C:" is the local drive at the server where `sp_send_dbmail1` runs, not necessarily where the code is running!)
 
+Best sure `Save data with report` is *unchecked* in the Crystal Report file. See [#2](https://github.com/gojimmypi/crMailer/issues/2)
+
 See also the [Crystal Reports Downloads](https://www.crystalreports.com/download/), [Free Viewer](https://www.sap.com/cmp/td/sap-crystal-reports-viewer-trial.html) 
 and [SAP Crystal Reports, version for Visual Studio](https://www.sap.com/cmp/td/sap-crystal-reports-visual-studio-trial.html).
 
